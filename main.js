@@ -11,20 +11,8 @@ const portofolio = [
     },
 ]
 
-// const contact = [
-//     {
-//         platform: "Linkedin",
-//         link: "https://linkedin.com/in/raihanlh",
-//         icon: "./"
-//     },
-//     {
-//         platform: "Github",
-//         link: "https://github.com/raihanlh",
-//         icon: "./"
-//     }
-// ]
-
 $(() => {
+    // Add each portofolio to web page
     portofolio.forEach((item) => {
         let a = $(`<a href=${item.link} class="col text-decoration-none p-0 m-2 thumbnail" target="_blank"></a>`)
         let el = $("<div></div>");
@@ -36,6 +24,7 @@ $(() => {
         $("#portofolio-container").append(a);
     })
 
+    // Create scroll animation
     var $animation_elements = $('.animation-element');
     var $window = $(window);
 
